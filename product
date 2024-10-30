@@ -1,0 +1,14 @@
+class Product:
+    def __init__(self):
+        self.name = "товар"
+        self.price = 100
+        self.quantity = 5
+    def calculate_total_price(self):
+        return self.price * self.quantity
+    def display_info(self):
+        print("название:", self.name)
+        print("цена:", self.price)
+        print("количество:", self.quantity)
+        print("общая стоимость:", self.calculate_total_price())
+product1 = Product()
+product1.display_info()
